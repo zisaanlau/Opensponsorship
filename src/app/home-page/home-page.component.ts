@@ -467,7 +467,6 @@ export class HomePageComponent implements OnInit {
   };
 
   changeVis = () => {
-    // alert(this.open);
     this.isShowForm = !this.isShowForm;
     this.isButtonVisible = !this.isButtonVisible;
   };
@@ -488,8 +487,7 @@ export class HomePageComponent implements OnInit {
         .post("https://opensponsorship-liuz6.herokuapp.com/api", this.model)
         .then(response => {
           alert("Upload succeeded!");
-          // this.isButtonVisible = !this.isButtonVisible;
-          // this.isShowForm = !this.isShowForm;
+
           window.location.reload();
         })
         .catch(function(error) {
@@ -499,7 +497,6 @@ export class HomePageComponent implements OnInit {
   };
 
   getRecord = row => {
-    // this.editData = this.allData[row.position - 1];
     this.model = this.allData[row.position - 1];
     this.isShowForm = !this.isShowForm;
     this.isButtonVisible = !this.isButtonVisible;
