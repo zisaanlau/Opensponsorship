@@ -435,7 +435,7 @@ export class HomePageComponent implements OnInit {
   ngOnInit() {
     this.dataSource = [];
     axios
-      .get("https://opensponsorship-liuz6.herokuapp.com/api")
+      .get("https://opensponsorship-zishan.herokuapp.com/api")
       .then(response => {
         this.allData = response.data;
         return response.data.map((person, index) => {
@@ -474,7 +474,7 @@ export class HomePageComponent implements OnInit {
   submit = () => {
     if (this.isEditing) {
       axios
-        .put("https://opensponsorship-liuz6.herokuapp.com/api", this.model)
+        .put("https://opensponsorship-zishan.herokuapp.com/api", this.model)
         .then(response => {
           alert("Edit succeeded!");
           window.location.reload();
@@ -484,7 +484,7 @@ export class HomePageComponent implements OnInit {
         });
     } else {
       axios
-        .post("https://opensponsorship-liuz6.herokuapp.com/api", this.model)
+        .post("https://opensponsorship-zishan.herokuapp.com/api", this.model)
         .then(response => {
           alert("Upload succeeded!");
 
