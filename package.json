@@ -27,7 +27,7 @@
     "@ngx-formly/core": "^5.5.12",
     "@types/cors": "^2.8.6",
     "@types/mongoose": "^5.7.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "connect": "^3.7.0",
     "cors": "^2.8.5",
